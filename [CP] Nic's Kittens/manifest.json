@@ -1,0 +1,11 @@
+{
+    "Name": "Kittens",
+    "Author": "handwrittenhello",
+    "Version": "1.0.0",
+    "Description": "",
+    "UniqueID": "handwrittenhello.kittens",
+    "UpdateKeys": [ "Nexus:34867" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+}
