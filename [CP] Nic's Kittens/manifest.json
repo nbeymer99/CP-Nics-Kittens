@@ -1,10 +1,10 @@
 {
-    "Name": "Kittens",
+    "Name": "Nic's Kittens",
     "Author": "handwrittenhello",
     "Version": "1.0.0",
     "Description": "",
-    "UniqueID": "handwrittenhello.kittens",
-    "UpdateKeys": [ "Nexus:34867" ],
+    "UniqueID": "handwrittenhello.NicsKittens",
+    "UpdateKeys": [ "Nexus:34867", "Github:nbeymer99/CP-Nics-Kittens"],
     "ContentPackFor": {
         "UniqueID": "Pathoschild.ContentPatcher"
     },
