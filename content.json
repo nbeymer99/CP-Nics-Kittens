@@ -1,6 +1,7 @@
 {
-"Format": "2.6.1",
+"Format": "2.7.0",
     "Changes": [
+		// LOADS
 		{
 			"Action": "Load",
 			"Target": "Mods/{{ModId}}/kittenBlack",
@@ -8,15 +9,28 @@
 		},
 		{
 			"Action": "Load",
-			"Target": "Mods/{{ModId}}/Icons/kittenBlack",
-			"FromFile": "assets/Icons.png",
+			"Target": "Mods/{{ModId}}/kittenTuxedo",
+			"FromFile": "assets/kitten_tuxedo.png",
+		},
+		{
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/kittenGrey",
+			"FromFile": "assets/kitten_grey.png",
+		},
 		
+		{
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/Icons",
+			"FromFile": "assets/Icons.png",
+		},
+		
+		// PETS
 		{
 			"Action": "EditData",
 			"Target": "Data/Pets",
 			"Entries": {
-				"{{ModId}}_BlackKitten": {
-					"DisplayName": "black kitten",
+				"{{ModId}}_Kitten": {
+					"DisplayName": "kitten",
 					"BarkSound": "cat",
 					"ContentSound": "cat",
 					
@@ -770,7 +784,7 @@
 						"Shake": 0,
 						"Animation": [
 						  {
-							"Frame": 24,
+							"Frame": 4,
 							"Duration": 800,
 							"HitGround": false,
 							"Jump": true,
@@ -838,7 +852,7 @@
 						  },
 						  {
 							"Frame": 26,
-							"Duration": 200,
+							"Duration": 1200,
 							"HitGround": false,
 							"Jump": false,
 							"Sound": null,
@@ -1045,6 +1059,8 @@
 						"PerItemCondition": null
 					  }
 					],
+					
+					// Breeds
 					"Breeds": [
 					{
 						"Id": "black",
@@ -1057,7 +1073,35 @@
 							"Height": 16,
 						},
 						"AdoptionPrice": 10000,
-						"VoicePitch": 1.25,
+						"VoicePitch": 1.5,
+					},
+					
+					{
+						"Id": "tuxedo",
+						"Texture": "Mods/{{ModId}}/kittenTuxedo",
+						"IconTexture": "Mods/{{ModId}}/Icons",
+						"IconSourceRect": {
+							"X": 16,
+							"Y": 0,
+							"Width": 16,
+							"Height": 16,
+						},
+						"AdoptionPrice": 10000,
+						"VoicePitch": 1.5,
+					},
+					
+					{
+						"Id": "grey",
+						"Texture": "Mods/{{ModId}}/kittenGrey",
+						"IconTexture": "Mods/{{ModId}}/Icons",
+						"IconSourceRect": {
+							"X": 32,
+							"Y": 0,
+							"Width": 16,
+							"Height": 16,
+						},
+						"AdoptionPrice": 10000,
+						"VoicePitch": 1.5,
 					},
 					],
 				},
